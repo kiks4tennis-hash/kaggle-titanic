@@ -1,3 +1,66 @@
+# ML Product Design Document
+
+
+## Project title
+Titanic Survival Prediction
+
+## Background & Motivation
+
+
+## Problem Definition
+- business problem
+- ML problem
+- success criteria
+
+## Stakeholders & Use case
+- e.g. DS team : model development and validation
+       Business team : understand suvival drivers
+
+## Data description
+- data source
+- features
+- data leakage check
+
+## Evaluation Strategy
+- metric (=accuracy why?)
+- validation method 
+
+## Baseline model
+- model choice
+- reasoning
+- baseline results (for reference)
+
+## Feature Engineering Strategy
+- planned features
+    * Each feature addition is evaluated independently to confirm stable improvement.
+
+## Model Iteration strategy
+- capacity progression
+    logistic-regression -> random-forest -> Gradient-Boosting
+    * Increase model capacity only after feature representation is sufficiently mature to avoid unnecessary overfitting.
+
+## Experiment Tracking
+- each experiment records,
+    - model type and params
+    - feature set version
+    - val score (mean,std)
+    - generalization gap
+
+## Generalization & Risk Analysis
+- potential risk
+- mitigation
+
+## Deployment Consideration
+- Inference  batch prediction
+- Monitoring (e.g. input distribution drift, prediction confidence)
+- Retraining Policy (e.g. triggered by data distribution change)
+
+
+
+
+
+
+
 ■お題
 Titanic
 
@@ -36,4 +99,3 @@ why?
 - what didnt work
 - whay i think so
 - what i would try next
-

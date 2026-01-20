@@ -8,6 +8,7 @@ Everything next should answer one of only three questions:
 
 3. Is the evaluation / training setup limiting performance?
 
+
 ---------------------------------------
 Q. Where should i check to decide whether these 3 points are problem ?
 

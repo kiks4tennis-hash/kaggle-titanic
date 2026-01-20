@@ -11,6 +11,7 @@ git init
 git status
 
 ## 4. create GitHub Repository in UI. (only first time)
+https://github.com/
 
 ## 5. Stages all files in the current directory for commit
 git add .
