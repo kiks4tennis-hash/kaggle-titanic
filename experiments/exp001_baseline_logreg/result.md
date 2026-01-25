@@ -15,18 +15,18 @@ Validation Accuracy: 0.8045
 Score: 0.76076
 
 ## Conclusion
+
+- Train ≈ Val and both low
+    -> unable to capture meaningful feature (each feature contribute independently in lr)
+    -> unable to capture non-linear interactions because model could be too simple
+
 - Val >> LB
-    -> suggests remaining generalization gap and room for improvement
-        -> feature engineering because each feature contributes independantly in logistic regression. proper and meaningful features are important to predict target.
-        -> higher-capacity models to express more complex patterns.
-    -> Data leakage , overfitting could be occured. (but train≈test)
     -> This drop is normal because
         - Training/validation data and test data come from different distributions. (e.g.Passenger demographics differ)
         - Public LB is noisy (only part of test set)
-
-- Train ≈ Val and both low
-    -> Model could be too simple, which means the model seems unable to capture non-linear interactions. (Model capacity problem)
-    -> No signs of overfitting.
+    -> However, we can also say there is room for generalization improvement.
 
 ## Next Experiment
-- use cross-validation to improve evaluation process. 
+- add feature for better generalization of logistic regression.
+- use decision tree to caputre no-linear interactions.
+- try some hyperparameters

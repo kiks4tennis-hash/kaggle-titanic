@@ -1,16 +1,10 @@
 # ML Product Design Document
 
----
-
 ## Project title
 Titanic Survival Prediction
 
----
-
 ## Background & Motivation
 The Titanic dataset is a classic binary classification problem where the objective is to predict passenger survival based on demographic and ticket-related information.
-
----
 
 ## Problem Definition
 - business problem
@@ -24,14 +18,10 @@ The Titanic dataset is a classic binary classification problem where the objecti
     * Reasonable generalization to unseen data
     * Interpretable model and features
 
----
-
 ## Stakeholders & Use case
 - DS team : model development and validation
 - Business team : understand suvival drivers
 - Engineering team : Deployment and maintenance
-
----
 
 ## Data description
 - Data source
@@ -44,8 +34,6 @@ The Titanic dataset is a classic binary classification problem where the objecti
 - data leakage check
     * No post-event features included
     * All features available before outcome
-
----
 
 ## Evaluation Strategy
 - Metric
@@ -61,8 +49,6 @@ The Titanic dataset is a classic binary classification problem where the objecti
         - Single train/validation splits are unstable for small datasets.
         - Cross-validation provides a more reliable estimate of generalization performance and reduces dependency on one specific split.
 
----
-
 ## Baseline model
 - Model choice
     * Logistic Regression
@@ -76,8 +62,6 @@ The Titanic dataset is a classic binary classification problem where the objecti
     * Train/Val vs Test gap : Large
 - Rationale
     * This baseline confirms data quality and establishes a reference point for future improvements
-
----
 
 ## Feature Engineering Strategy
 - Goal
@@ -94,8 +78,6 @@ The Titanic dataset is a classic binary classification problem where the objecti
 - Ratioanle
     * Each feature addition is evaluated independently to confirm stable improvement.
 
----
-
 ## Model Iteration strategy
 - Capacity progression
     logistic-regression -> random-forest -> Gradient-Boosting
@@ -106,16 +88,12 @@ The Titanic dataset is a classic binary classification problem where the objecti
 - Principle
     * Increase model capacity only after feature representation is sufficiently mature to avoid unnecessary overfitting.
 
----
-
 ## Experiment Tracking
 - each experiment records,
     * model type and params
     * feature set version
     * val score (mean,std)
     * generalization gap
-
----
 
 ## Generalization & Risk Analysis
 - Potential Risks
@@ -128,14 +106,10 @@ The Titanic dataset is a classic binary classification problem where the objecti
     - Regularization
     - Conservative feature design
 
----
-
 ## Deployment Consideration
 - Inference  batch prediction
 - Monitoring (e.g. input distribution drift, prediction confidence)
 - Retraining Policy (e.g. triggered by data distribution change)
-
----
 
 ## Limitations
 - Small dataset size
@@ -144,8 +118,7 @@ The Titanic dataset is a classic binary classification problem where the objecti
 These limitations are explicitly acknowledged in model communication.
 
 
---------------------------------------------------------------------
-
+---
 
 ■お題
 Titanic

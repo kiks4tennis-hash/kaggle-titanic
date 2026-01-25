@@ -1,23 +1,32 @@
-Q. After we have this Logistic Regression baseline, what should i do ?
+# Q. After we have this Logistic Regression baseline, what should i do ?
 
-Everything next should answer one of only three questions:
-
+## Everything next should answer one of only three questions:
 1. Is the representation (features / preprocessing) limiting performance?
-
 2. Is the model choice limiting performance?
-
 3. Is the evaluation / training setup limiting performance?
 
+## Every experiment fits into one of these buckets:
+Feature engineering
+Model choice
+Hyperparameters
+Data cleaning / leakage fixes
+
+## A simple decision rule you can use
+Ask yourself, “What should I try next?”
+If train & validation both low → ❌ features
+If train high, val low → ❌ overfitting → tune / regularize
+If both decent but plateaued → try new model
+
+## Use the 2-axis decision rule to decide experiment-order:
+Expected impact (Low / Medium / High)
+Cost (Time + complexity + risk)
 
 ---------------------------------------
-Q. Where should i check to decide whether these 3 points are problem ?
+# Q. Where should i check to decide whether these 3 points are problem ?
 
 - Check Traning score, Validation score, Test score
-
 - We compare it to other values to understand why it is low.
-
 - A metric has no meaning in isolation.
-
 
 Train vs Val
   -> tells us whether the model is learning well or not.

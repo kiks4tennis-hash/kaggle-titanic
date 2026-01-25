@@ -4,7 +4,7 @@
 ## 1. create .gitignore file
 echo "" > .gitignore
 
-## 2. Creates a new Git repository in your current folder. After this, Git starts tracking changes in your project
+## 2. Creates a new Git repository in your current folder, Git starts tracking changes in your project.(only first time)
 git init
 
 ## 3. check status
