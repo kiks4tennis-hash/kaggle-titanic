@@ -16,9 +16,10 @@ Training Accuracy: 0.8624
 Validation Accuracy: 0.8324
 
 ## Kaggle LB
-Score: 0.65071
+Score: 0.75837
 
 ## Conclusion
-
+- this experiment mitigated overfitting.
+- train and val score improved compared with Logistic Regression, but test score didn't.
 
 ## Next Experiment
