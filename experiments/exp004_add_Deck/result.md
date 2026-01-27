@@ -1,6 +1,6 @@
 ## Hypothesis
-A new feature (Title) affects performance 
-because it encodes more information about passenger, like gender + age + social status.
+A new feature (Deck) affects performance 
+because the location on the ship affect the possibility of survival.
 
 ## Model
 Logistic Regression
@@ -9,21 +9,18 @@ Logistic Regression
 solver="liblinear"
 
 ## Validation Score
-Training Accuracy: 0.8160
-Validation Accuracy: 0.8156
 
 ## Kaggle LB
-Score: 0.77990
 
 ## Conclusion
-This try improved train and val score by +1 point compared with baseline.
+reject. because 204 non-null. (1/4)
 
 ## Next Experiment
 Try another feature on top of this experiment.
 
 2. Deck (from Cabin)
-Example: Cabin = "C85" → Deck = "C"
-Why it works:
-Deck correlates with ship location
-Location mattered in evacuation
+    Example: Cabin = "C85" → Deck = "C"
+    Why it works:
+        Deck correlates with ship location
+        Location mattered in evacuation
 
